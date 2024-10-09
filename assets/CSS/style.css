@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.separator-GB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator-GB .star{
+    font-size: 50px;
+    margin: 5px 15px 17px 15px;
+}
+
+.separator-GB .line{
+    background-color: white;
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.separator-WB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator-WB .star{
+    color: #2c3e51;
+    font-size: 50px;
+    margin: 5px 15px 17px 15px;
+}
+
+.separator-WB .line{
+    background-color: #2c3e51;
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+header{
+    color: white;
+}
+section{
+    width: 100%;
+    text-align: center;
+    padding: 75px 0;
+}
+.nonHero h2{
+    font-size: 40px;
+    /* margin-bottom: 20px; */
+}
+.green-bg{
+    background-color: #1abc9c;
+    color: white;
+}
+
+.white-bg{
+    background-color: white;
+    color: #2c3e51;
+}
+nav{
+    
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 35px 100px;
+    /* position: fixed; */
+}
+
+nav div{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+nav div p a{
+    text-decoration: none;
+    color: white;
+}
+.links{
+    background-color: #2c3e50;
+}
+.copyrights{
+    background-color: #1a252f;
+    padding: 15px 0px;
+    color: white;
+}
+
+.hero{
+    height: 100vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero img{
+    width: 200px;
+    border-radius: 50%;
+    /* margin-top: 100px; */
+}
+.hero h2{
+    font-size: 60px;
+    margin-top: 40px;
+    
+}
+
+.hero p{
+    font-size: 20px;
+    font-weight: 10px;
+    margin-top: 15px;
+}
+
+.portfolio .flex{
+    width: 680px;
+    margin: auto;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+
+.portfolio div .skill{
+    width:200px;
+    height: 140px;
+    margin: 10px;
+    /* border: 0.5px solid #707070; */
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.portfolio img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.about{
+    
+    text-align: center;
+}
+
+.about .para{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.about div p{
+    text-align: left;
+    margin: 20px;
+}
+
+.about button{
+    width: 20%;
+    height: 65px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.contact form{
+    margin: 20px 0;
+}
+.contact .message{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 80px;
+    font-size: 20px;
+    font-weight:500;
+}
+.contact div textarea{
+    margin-top: 20px;
+}
+
+.contact button{
+    font-size: 18px;
+    font-weight:500;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    height: 65px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.links div{
+    width: 20%;
+
+    color: white;
+    margin: auto;
+}
+
+.links div #media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links div #media div{
+    width: 15px;
+    height: 15px;
+    margin: 20px;
+}
+.links div #media img{
+    width: 30px;    
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+    nav h1{
+        font-size: 25px;
+    }
+    nav div p a{
+        font-size: smaller;
+    }
+    .hero h2{
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .separator-GB .star{
+        font-size: 35px;
+        margin: 2.5px 10px 12px 10px;
+    }
+
+    .separator-GB .line{
+        height: 2.5px;
+        width: 75px;
+        border-radius: 5px;
+    }
+
+    .separator-WB .star{
+        font-size: 35px;
+        margin: 2.5px 10px 12px 10px;
+    }
+
+    .separator-WB .line{
+        height: 2.5px;
+        width: 75px;
+        border-radius: 2.5px;
+    }
+
+    nav h1{
+        font-size: 17.5px;
+    }
+    nav div p a{
+        font-size: x-small;
+    }
+    .hero h2{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 17.5px;
+    }
+    
+    .nonHero h2{
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .separator-GB .star{
+        font-size: 25px;
+        margin: 1.5px 6px 8px 6px;
+    }
+
+    .separator-GB .line{
+        height: 1.5px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .separator-WB .star{
+        font-size: 25px;
+        margin: 1.5px 6px 8px 6px;
+    }
+
+    .separator-WB .line{
+        height: 1.5px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav div{
+        margin-top: 30px;
+    }
+    nav h1{
+        font-size: 20px;
+    }
+    nav div p{
+        margin: 0px 12px;
+    }
+    nav div p a{
+        font-size:medium;
+        text-decoration: underline;
+    }
+    .hero h2{
+        font-size: 35px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+    
+    .nonHero h2{
+        font-size: 25px;
+    }
+
+    .portfolio .flex{
+        width: 60%;
+    }
+    
+    .portfolio div .skill{
+        width:120px;
+        height: 80px;
+        margin: 10px;
+    }
+    
+    .portfolio img{
+        width: 60px;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+    }
+
+    .about .para{
+        width: 70%;
+    }
+    
+    .about button{
+        width: 30%;
+        height: 65px;
+        font-size: 17.5px;
+    }
+    
+    .contact button{
+        font-size: small;
+        height: 35px;
+    }
+    
+    .links{
+        padding: 30px 50px;
+    }
+    links div{
+        width: 30%;
+    }
+    .links div #media div{
+        width: 10%;
+        height: 15px;
+        margin: 15px;
+    }
+    .links div #media img{
+        width: 20px;    
+    }
+
+    .links h4{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    .links p{
+        font-size: 12px;
+    }
+    .copyrights p{
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 575px){
+    .separator-GB .star{
+        font-size: 20px;
+        margin: 1.5px 6px 8px 6px;
+    }
+
+    .separator-GB .line{
+        height: 1.5px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .separator-WB .star{
+        font-size: 25px;
+        margin: 1.5px 6px 8px 6px;
+    }
+
+    .separator-WB .line{
+        height: 1.5px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    nav{
+        flex-direction: column;
+        padding: 30px;
+    }
+    nav div{
+        margin-top: 30px;
+    }
+    nav h1{
+        font-size: 17.5px;
+    }
+    nav div p{
+        margin: 0px 10px;
+    }
+    nav div p a{
+        font-size:small;
+        text-decoration: underline;
+    }
+    .hero h2{
+        font-size: 25px;
+    }
+
+    .hero p{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .nonHero h2{
+        font-size: 25px;
+    }
+
+    .portfolio .flex{
+        width: 70%;
+    }
+    
+    .portfolio div .skill{
+        width: 100px;
+        height: 70px;
+        margin: 5px;
+    }
+    
+    .portfolio img{
+        width: 40px;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+    }
+
+    .about{
+        text-align: center;
+    }
+    
+    .about .para{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .about div p{
+        text-align: left;
+        margin: 20px;
+    }
+    
+    .about button{
+        width: 30%;
+        height: 65px;
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+    
+    .contact form{
+        margin: 20px 0;
+    }
+    .contact .message{
+        border: none;
+        border-bottom: 1px solid gray;
+        margin-bottom: 7.5px;
+        width: 45%;
+        height: 45px;
+        font-size: 15px;
+        font-weight:500;
+    }
+    .contact div textarea{
+        margin-top: 15px;
+    }
+    
+    .contact button{
+        font-size:x-small;
+        height: 35px;
+    
+    }
+
+    .links{
+        padding: 30px 50px;
+        justify-content: space-around;
+    }
+    .links div{
+        width: 30%;
+        margin: 0px 12px;
+    }
+    .links div #media div{
+        width: 10%;
+        height: 15px;
+        margin: 10px;
+    }
+    .links div #media img{
+        width: 17.5px; 
+          
+    }
+
+    .links h4{
+        font-size: 10px;
+        margin: 5px ;
+    }
+    .links p{
+        font-size: 8px;
+    }
+    .copyrights p{
+        font-size: x-small;
+    }
+}
